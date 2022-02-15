@@ -6,6 +6,9 @@ RUN docker-php-ext-install mysqli
 
 COPY index.php /var/www/html/
 # copy file index.php ke apache
+COPY index2.php /var/www/html/
+# copy file index yang baru ke webserver utk github
+
 
 # chown artinya mengubah kepemilikan dari suatu file. 
 # -R artinya dilakukan secara rekursif (memberi efek yang sama ke semua subfolder dibawahnya)
